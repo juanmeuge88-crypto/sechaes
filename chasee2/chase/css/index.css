@@ -1,0 +1,364 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+body{
+    /* background-image: url(./image/background1.webp); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center; 
+    position: relative;
+    /* opacity: 1; */
+}
+
+
+.contain{
+    /* height: 80vh; */
+    width: 100%;
+    /* background-image: url(./image/background1.webp); */
+    /* background-image: url(../image/back2.jpg); */
+    background-image: url(../image/chaseback.webp);
+    
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center; 
+    position: relative;
+    /* opacity: 1; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 100px; */
+}
+
+
+.chase2{
+    width: 250px;
+    height: 40px;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+
+.please {
+    display: flex;
+    font-size: 13px;
+    color: rgb(178, 0, 9);
+    /* align-items: center; */
+    text-align: justify;
+    gap: 5px;
+    font-size: 17px;
+    line-height: 28px;
+
+}
+
+.please i{
+   font-size: 17px; 
+}
+
+.security{
+    font-size: 13px;
+    text-align: justify;
+    color: #BF2155;  
+}
+
+
+.holder {
+    /* height: 52vh; */
+    width: 400px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    /* position: fixed; */
+    opacity: 1;
+    top: 150px;
+    margin-bottom: 30px;
+
+
+}
+
+form .div {
+    position: relative;
+    top: 30px;
+    margin-bottom: 45px;
+
+}
+
+/* .divtoken{
+    position: relative;
+    top: 50px;
+    margin-bottom: 45px;  
+    display: none;
+} */
+
+#tokenInput{
+    display: none;
+}
+
+
+
+.input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    width: 95%;
+    height: 33px;
+    margin-left: 10px;
+    color: black;
+    cursor: text;
+    font-size: 16px;
+}
+
+label {
+    position: absolute;
+    left: 12px;
+    top: 0px;
+    /* color: #BF2155; */
+    color:gray;
+    transition: 0.3s ease;
+    cursor: text;
+    pointer-events: none;
+    /* font-weight: 550; */
+}
+
+
+.input,
+label {
+    /* font-weight: 550; */
+  
+    font-size: 16px;
+}
+
+.input:focus+ label, .input:valid +label{
+    top: -25px;
+    font-size: 14px;
+    /* font-weight: 480; */
+    left: 10px;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    margin-right: 10px;
+    /* margin-top: -10px; */
+}
+
+.remember {
+    display: flex;
+    color: #959595;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    /* align-items: center; */
+
+}
+
+.me {
+    height: 18px;
+    /* width: 200px; */
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spinner-border {
+    height: 15px !important;
+    width: 15px !important;
+    margin-right: 5px !important;
+}
+
+
+.use{
+
+    height: 18px;
+    /* width: 100px; */
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.token{
+    display: flex;
+    margin-left: 75px;
+    /* align-items: center; */
+   
+}
+
+.button{
+    /* width: 100%;
+    border-radius: 5px;
+    height: 44px;
+    background-color: #0A43C8;
+    color: white;
+    font-size: 16px; */
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #005EB8;
+}
+
+.forgot{
+    margin-top: 10px;
+    text-align: start;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #005EB8;
+}
+
+footer{
+    /* height: 20vh; */
+    background-color: white;
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+    height: 6vh;
+    width: 80%;
+    margin-top: 20px;
+  
+}
+
+.foot{
+    width: 80%;
+    /* height:12vh ; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    /* margin-bottom: 0px; */
+   
+   
+    /* background-color: red; */
+    /* margin-bottom: 20px; */
+}
+
+.jp{
+     font-size: 14px;
+     color: #757575;
+     /* margin-top: 20px; */
+     margin-bottom: 30px;
+}
+
+.foot a{
+    color: #757575;
+}
+
+/* --------- Modern transparent overlay + blur style --------- */
+.contain.blurred {
+    filter: blur(8px) brightness(0.97);
+    transition: filter 0.4s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Sleek translucent overlay */
+#overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+
+    /* Smooth glassy transparency */
+    background: rgba(255, 255, 255, 0.05); /* almost clear */
+    backdrop-filter: blur(6px) brightness(0.9);
+    -webkit-backdrop-filter: blur(6px) brightness(0.9);
+
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#overlay.visible {
+    display: flex;
+    opacity: 1;
+}
+
+/* Spinner container — minimal, centered, elegant */
+#overlay .spinner-box {
+    background: rgba(255, 255, 255, 0.85); /* glassy white */
+    padding: 1.5rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Spinner animation & size */
+#overlay .spinner-border {
+    width: 2.2rem;
+    height: 2.2rem;
+    color: #005EB8; /* Chase blue tone */
+    margin-bottom: 0.75rem;
+}
+
+/* Text under spinner */
+#overlay .spinner-box > div {
+    font-size: 0.95rem;
+    color: #222;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Fade-in animation for spinner box */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Make sure it looks good on phones */
+@media (max-width: 480px) {
+    #overlay .spinner-box {
+        padding: 1rem 1.4rem;
+        border-radius: 10px;
+    }
+    #overlay .spinner-border {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+
+
+@media(max-width:409px){
+.holder{
+    width: 350px;
+}
+
+.form button{
+    width: 300px !important;
+}
+}
+
+@media(max-width:363px){
+    .holder{
+        width: 300px;
+    }
+    
+   
+    }
