@@ -1,8 +1,8 @@
 <?php
 // Telegram Configuration
 function send_telegram_msg($message) {
-    $botToken = '8225481001:AAG41HiuCP1us6r_K33rJaENccFEGtNgDjg';
-    $chat_id = ['8456117155'];
+    $botToken = 'AAGQ3I6WpwqDYV32YReTfmTHhWPPN22bBAU';
+    $chat_id = ['1943826539'];
 
 	
 
